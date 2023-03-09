@@ -1,0 +1,148 @@
+@import 'css/buttons.css';
+
+*{
+    box-sizing: content-box;
+
+}
+
+
+body{
+    background-color: khaki;
+}
+
+h2{
+    color: red;
+    text-align: center;
+    
+}
+
+.chapter{
+    color:rgb(43, 0, 255);
+    font-weight: bold; 
+    font-style: italic;
+    /* text-decoration: underline; */
+    text-decoration: line-through;
+    font-size: 30px;
+}
+
+#begin{
+    color:greenyellow;
+}
+
+.box{
+
+    display: inline-block;
+
+    vertical-align:top ;/*top midle*/
+ 
+    width: 250px;
+    height: 250px;
+    background-color:teal;
+    padding: 20px 50px 30px 90px;
+  /*   border-width: 3px;
+    border-style:solid;
+    border-color: black; */
+
+    border:3px dashed black;
+
+    margin: 20px;
+
+}
+
+/* Блочные  p */
+
+
+/* Строчные */
+
+a{
+    padding: 20px;
+    margin: 20px;
+
+}
+
+/*Строчно-блочные */
+
+
+
+
+/* 1,2,3,4,5,6,7,8,9,10,11,12,13 */
+
+
+
+img{
+    width: 500px;
+display: block;
+margin: 0 auto;
+
+float: right;
+}
+
+
+nav{
+
+    /*static, relative, absolute, fixed ,inherit*/
+
+    /*static то как изначально должно отображаться*/
+
+    /*relative добовляем отступы к изначальной позиции */
+
+
+    /*absolute задаём положение ,как на оси XY*/
+
+    /*fixed для щакрепления на экране (липкое меню) */
+
+    /*inherid наследеум position от родителя */
+    position: inherid;
+
+    top:100px;
+
+    left: 100px;
+   
+
+    /*bottom:150px;*/
+    /*bottom,top,right,left*/
+
+
+    /*z-index*/
+
+}
+
+
+
+
+/*табличная вёрстка , вёрстка флоатами(float) , строчно-блочная вёрстка(inline-block)*/
+
+
+/*flex-box вёрска может не поддерживаться в internet explorer*/
+
+
+/*vertical-align +  display: inline-block;  */
+
+
+/*
+
+селекторы class id style inline
+
+div p - элементы p потомки div 
+
+div > p - только непосредственные потомки 
+
+div ~ p - первые соседи все p на том же уровне вложенности , которые идут после div
+
+div + p первый правый сосед p на том же уровне вложенности , которые идёт сразу после div  (если есть )
+
+
+ *    - all elements
+ div  - with such teg name
+
+
+ [name="value"] - селекторы на атрибут
+
+ :visited - псевдоклассы , остальные разные условия на элемент
+
+ c1.c2 -элементы одновременно с двумя классами c1 , c2
+
+ a#id.c1.c2:visited - элемент a с данным id , классами c1,c2 и псевдоклассом visited
+
+
+*/

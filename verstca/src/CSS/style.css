@@ -1,0 +1,472 @@
+* {
+  box-sizing: border-box; /*правильное отображение ширины и высоты всех элементов   с учётом margin-ов и padding-ов */
+
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url('../fonts/RobotoCondensed-Bold.eot');
+  src: url('../fonts/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RobotoCondensed-Bold.woff') format('woff'),
+  url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+
+
+html{
+  font-family: 'Roboto',sans-serif;
+}
+
+/*подвести все элементы под один шаблон */
+
+.container {
+  position: relative;
+  width: 1140px;
+
+  margin: 0 auto; /*выровнить по центру , трюк для блочных элементов*/
+}
+  
+.logo_img {
+  /**/
+}
+
+.promo {
+  /*  background-color:rgb(12, 113, 113); */
+  background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
+  /*выходим из папки , заходим в папку  */ /*по оси X по оси Y по центру , размер картинки (cover растяну картинку , если не помещаеться ) , не повторялась no-repeat */
+  height: 800px;
+
+  padding: 39px 0 62px 0; /*сверху 39 px  снизу 62px в блоке bg img*/
+}
+
+.logo .logo_img {
+  display: block;
+  margin: 0 auto;
+}
+
+.logo .logo_text {
+  color: #fff;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ */
+  /*Roboto*/
+
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px; /*межстрочный интервал*/
+  text-transform: uppercase;
+
+  text-align: center;
+  margin-top: 14px; /*от лого*/
+}
+
+h1 {
+  margin-top: 53px;
+}
+
+.title {
+  color: #f9bf3b;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  */ font-size: 41px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2.title {
+  margin-top: 30px;
+}
+
+.simple .title_big {
+  color: #fff;
+
+  font-family: 'Roboto Black',sans-serif;
+   font-size: 100px;
+  font-weight: 400;
+  /* line-height: 24px; используем ,когда несколько строк текста */
+  text-transform: uppercase;
+
+  text-align: center;
+
+  margin-top: 21px;
+}
+
+.promo .promo_text {
+  padding: 0 13px;
+
+  margin-top: 23px;
+
+  color: #fff;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ */  font-size: 21px;
+  font-weight: 300;
+  line-height: 28px;
+
+  /*font-family:"Roboto Light"*/
+
+  text-align: center;
+}
+
+.promo .promo_text span {
+  color: #f9bf3b;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  */ font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  /*3 , font-family:"Roboto - Bold"*/
+
+  font-weight: 500;
+}
+
+.promo .promo_btn {
+  display: block;
+  /* margin: 73px auto; /*по вертикали*/
+
+  margin: 0 auto;
+
+  margin-top: 73px;
+
+  width: 313px;
+  height: 72px;
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.18);
+  border: 4px solid rgba(0, 0, 0, 0.23);
+  background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+
+  color: #fff;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /*Roboto Condensed*/
+ /**/
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  outline: none; /*убрать обводку*/
+}
+
+.more {
+  margin-top: 73px;
+}
+
+.more .more_text {
+  color: #fff;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; /*Roboto - Thin*/
+
+ /**/  font-size: 15px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.more .more_img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 13px;
+}
+
+/*****SECTION_2**************************/
+
+.waiting {
+  min-height: 604px;
+
+  background-color: #efefef;
+
+  padding: 85px 0 75px 0;
+}
+
+.waiting .waiting_header,
+.finish .finish_header {
+  color: #252525;
+ 
+ 
+  font-family: 'Roboto Black',sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.waiting .waiting_divider,
+.finish .finish_divider {
+  width: 217px;
+
+  height: 4px;
+
+  background-color: #f9bf3b;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+
+.waiting .waiting_subheader,
+.finish .finish_header {
+  margin-top: 17px;
+
+  color: #4a4a4a;
+
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+ */  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.finish .finish_header {
+  color: #fff;
+
+  font-size: 60px;
+}
+
+.waiting .waiting_wrapper {
+  margin-top: 45px;
+}
+
+.waiting .waiting_wrapper .waiting_item {
+  display: inline-block;
+
+  vertical-align: top;
+
+  /**/
+
+  margin: 0 15px;
+  width: 339px;
+
+  text-align: center;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_img {
+  width: 100%;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_descr {
+  margin-top: 33px;
+
+  color: #4a4a4a;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ */  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.optimization {
+  min-height: 650px;
+  padding: 102px 0 107px 0;
+}
+
+.optimization .optimization_header {
+  margin-left: 391px;
+  color: #299cbd;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ */  font-size: 29px;
+  font-weight: 600;
+
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.optimization .optimization_text {
+  margin-top: 65px;
+  margin-left: 391px;
+  padding: 0 100px 80px 0;
+  color: #4a4a4a;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ */  font-size: 20px;
+  font-weight: 500;
+
+  line-height: 27px;
+}
+
+.optimization .optimization_text span {
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ */  font-weight: 700;
+}
+
+.optimization .optimization_img {
+  position: relative;
+  top: 58px;
+  left: 240px;
+
+  padding: 0 0 80px 0;
+
+  float: left;
+
+  z-index: -1;
+}
+
+/*16:54*/
+
+.finish {
+  min-height: 447px;
+  padding: 86px 0 79px 0;
+
+  background: url("../img/bg/second_bg.jpg") center center/cover no-repeat;
+}
+
+.finish .finish_wrapper {
+  margin-top: 41px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+  width: 204px;
+}
+
+.finish .finish_wrapper .finish_item .finish_round {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  margin: 0 auto;
+
+  width: 115px;
+  height: 115px;
+  background-color: #efefef;
+
+  border-radius: 100%;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr {
+  margin-top: 25px;
+  text-align: center;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ */  font-weight: 300;
+  font-size: 17px;
+
+  line-height: 20px;
+
+  color: #fff;
+}
+
+.gift {
+  background-color: #efefef;
+}
+
+.gift .gift_descr {
+  text-align: center;
+  padding: 0 0 40px 0;
+
+/*   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ */  font-size: 30px;
+  font-weight: 400;
+}
+
+.gift .gift_img {
+  padding: 65px;
+  display: block;
+  margin: 0 auto;
+}
+
+.first_intensiv {
+  padding: 20px;
+  min-height: 304px;
+}
+
+.first_intensiv .first_intensiv_img img {
+  display: block;
+  margin: 0 auto;
+
+  padding: 30px;
+}
+
+.first_intensiv .first_vebinar_header {
+  padding: 5px;
+
+  color: #252525;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  */ font-size: 30px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.first_intensiv .first_vebinar_subheader {
+  padding: 5px;
+
+  color: #3577f1;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  */ font-size: 35px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.first_intensiv .first_vebinar_descr {
+  padding: 5px;
+
+  color: #545454;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  */ font-size: 25px;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.footer {
+  min-height: 204px;
+
+  background-color: #1b1b1b;
+
+  padding: 85px 0 75px 0;
+}
+
+.footer .container .footer_header {
+  margin-top: 17px;
+
+  color: #9c9c9c;
+
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  */ font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer .container .footer_header a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+.footer .container .footer_header a:hover {
+  color: #eeeded;
+}
+
+.footer .footer_subheader {
+  color: #9c9c9c;
+ /*  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+ */  font-size: 20px;
+  font-weight: 200;
+
+  text-align: center;
+}
